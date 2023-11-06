@@ -1,0 +1,84 @@
+@import url("global.css");
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    background-image: url("../images/background-movies-series.png");
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding: 24px;
+    font-family: "Quicksand", cursive;
+  }
+  .navbar{
+    position: relative;
+  }
+  .login{
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--form-bg-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+  }
+  .titulo1{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  .lbllogin{
+    text-align: left;
+
+  }
+  .loginin{
+    background: var(--form-field-bg-color);
+    border: var(--form-field-border);
+     border-radius: 8px;
+    color: var(--text-color);
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .loginin::placeholder {
+    color: var(--form-field-placeholder);
+  }
+  
+  .loginin:invalid {
+    border-color: var(--form-field-error);
+  }
+  
+  .btn {
+    margin-top: 24px;
+    text-align: left;
+  }
+  
+  .lesqueceuaSenha {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: bold;
+  }
+  .footer{
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 480px) {
+    body {
+      height: auto;
+    }
+  
+    .btn .button {
+      display: block;
+      margin-bottom: 24px;
+    }
+  
+    .lesqueceuaSenha {
+      margin: 0;
+    }
+  }
