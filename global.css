@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: #020228;
+  --secondary-color: #ff00e5;
+  --tertiary-color: #b535f6;
+  --btn-bg-color-gradient: linear-gradient(
+    45deg,
+    #9b34ef 0%,
+    #490cb0 20%,
+    transparent 50%
+  );
+  --btn-link-bg-color: #fff;
+  --btn-link-color: #000;
+  --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+  --divider-bg-color: linear-gradient(
+    90deg,
+    #5516ba,
+    rgba(255, 0, 229, 0.5) 80%
+  );
+  --nav-bg-color: rgba(0, 0, 0, 0.3);
+  --text-color: #fff;
+  --link-color: #9e86ff;
+  --form-bg-color: rgba(211, 211, 211, 0.06);
+  --form-field-bg-color: rgba(0, 0, 0, 0.2);
+  --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+  --form-field-placeholder: rgba(255, 255, 255, 0.7);
+  --form-field-error: rgb(255, 76, 76);
+
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.navbar {
+    width: 100%;
+    padding: 12px 16px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg-color);
+    z-index: 1;
+  }
+  
+  .logo {
+    max-width: 160px;
+  }
+  
+  .logo .foto1{
+    width: 100%;
+  }
+  
+  .buttonnav {
+    margin-right: 24px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .buttonnav--button {
+    padding: 8px 26px;
+    transition: background 1s, color 1s;
+  }
+  
+  .buttonnav--button:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+  }
+  .button.button--gradient {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+  }
+  .button.button--gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+  }
+  .button {
+    padding: 16px 40px;
+    background-color: var(--tertiary-color);
+    border-radius: 500px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .header {
+    position: relative;
+    margin-top: 50px;
+    padding: 100px 0 300px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+  }
+  .header::after {
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
+  }
+  .container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px
+  }
+  .canais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .canais-1{
+    object-fit: contain;
+  }
+  .titulo1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .titulo2{
+    display: block;
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+  .barra{
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: var(--divider-bg-color);
+  }
+  .preco{
+    text-align: center;
+  font-size: 1.25rem;
+ }
+ .preco-produto{
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+ }
+ .mes{
+    font-size: 1rem;
+    font-weight: 300; 
+    font-size: small;
+ }
+ .header__button {
+    animation: mexer 2.3s linear infinite;
+ }
+ .conheca-plano1{
+    text-align: center;
+ }
+ .plano1{
+    position: relative;
+ }
+ .plano1s{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    background-color: blue;  
+ }
+.flexbox{
+    display: flex;
+    
+    
+    
+}
+ .mobile1{
+    list-style: none;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 30px;
+    flex-direction: row;
+ }
+ .material-symbols-outlined{
+    position: absolute;
+    left: 10px;
+    max-width: 12px;
+ }
+ .planotela{
+    background-color: #000;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    width: 350px;
+    height: 400px;
+    flex-direction: row;
+ }
+ .subscription {
+    background: url("../images/background-movies-series.png") no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .subscription__plans {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin: 40px 0;
+    perspective: 2000px;
+    perspective-origin: top;
+  }
+  
+  .subscription__card {
+    background: var(--card-bg-color);
+    padding: 40px 60px;
+    border-radius: 8px;
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .subscription__plans:has(.subscription__card:nth-child(1):hover)
+    .subscription__card:nth-child(2) {
+    transform: rotateY(-45deg);
+  }
+  
+  .subscription__plans:has(.subscription__card:nth-child(2):hover)
+    .subscription__card:nth-child(1) {
+    transform: rotateY(45deg);
+  }
+  
+  .subscription__description {
+    text-align: left;
+    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-left: 14px;
+  }
+  
+  .subscription__price {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    color: var(--secondary-color);
+    font-weight: 700;
+  }
+  
+  .subscription__price .text--small {
+    color: var(--text-color);
+  }
+  
+  .subscription__description::marker {
+    content: "+";
+    font-size: 2rem;
+    margin: 0 8px 0 0;
+  }
+  
+  .subscription__plan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+.contents{
+    margin: 100px auto;
+}  
+.containerdegrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+
+}
+.cards-folio {
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+    transition: transform 0.8s, background 0.8s, border 1s;
+  }
+  .imagens-series {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+  }
+  .cards-folio:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+  }
+  .cards-folio:hover .imagens-series {
+    opacity: 0;
+  }
+  .cards-folio:nth-child(1):hover {
+    background-image: url("assets/images/hbo-hover_0.webp");
+  }
+  .cards-folio:nth-child(2):hover {
+    background-image: url("assets/images/DC-Hover.webp");
+  }
+  .cards-folio:nth-child(3):hover {
+    background-image: url("assets/images/WB-Hover.webp");
+  }
+  .cards-folio:nth-child(4):hover {
+    background-image: url("assets/images/CN-Hover.png");
+  }
+  .cards-folio:nth-child(5):hover {
+    background-image: url("assets/images/UCL-Hover.webp");
+  }
+
+.link_hbo{
+    font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: var(--link-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 14px;
+  letter-spacing: 2px;
+  transition: color 0.5s;
+  font-size: 0.875rem;
+}
+.link_hbo:hover{
+    color: var(--text-color);
+}
+.legalizacao{
+    font-size: 0.75rem;
+  margin: 16px 0;
+  color: var(--link-color);
+}
+.midia-social{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+ @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes mexer {
+    0%,
+    10% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-15deg);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(10deg);
+    }
+    35% {
+      transform: rotate(-10deg);
+    }
+    40%,
+    100% {
+      transform: rotate(0);
+    }
+  }
